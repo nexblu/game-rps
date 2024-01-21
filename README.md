@@ -1,8 +1,12 @@
-# React + Vite
+# Tugas Framework Python Kelompok 4
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Framework
+1. FastAPI (As Backend)
+2. ReactJS (As Frontend)
+3. Bootstrap (As Frontend)
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Anggota Kelompok
+1. Andana Farras Pramudita (50423159)
+2. MUHAMMAD RAFI FADILLAH (50423976)
+3. NI MADE MAS VIKA AMANDA (51423099)
+4. SAMUEL MARTOGI SIHITE (51423357)
