@@ -12,15 +12,45 @@ async def rps_game(rps: RPS):
     bot_choice = random.choice(choice)
     if rps.choice in choice:
         if (rps.choice).lower() == bot_choice:
-            return "Seri!"
+            return JSONResponse(
+                content={
+                    "k4": {
+                        "status": f"draw",
+                        "your_choice": rps.choice,
+                        "bot_choice": bot_choice,
+                        "status_code": 200,
+                    }
+                },
+                status_code=404,
+            )
         elif (
             ((rps.choice).lower() == "rock" and bot_choice == "scissors")
             or ((rps.choice).lower() == "scissors" and bot_choice == "paper")
             or ((rps.choice).lower() == "paper" and bot_choice == "rock")
         ):
-            return "Anda Menang!"
+            return JSONResponse(
+                content={
+                    "k4": {
+                        "status": f"win",
+                        "your_choice": rps.choice,
+                        "bot_choice": bot_choice,
+                        "status_code": 200,
+                    }
+                },
+                status_code=404,
+            )
         else:
-            return "Anda Kalah!"
+            return JSONResponse(
+                content={
+                    "k4": {
+                        "status": f"lose",
+                        "your_choice": rps.choice,
+                        "bot_choice": bot_choice,
+                        "status_code": 200,
+                    }
+                },
+                status_code=404,
+            )
     else:
         return JSONResponse(
             content={"k4": {"status": f"{rps.choice} not found", "status_code": 404}},
