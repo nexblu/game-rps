@@ -14,7 +14,7 @@ const GameRPS = () => {
         const url = 'http://127.0.0.1:8000/api/v1/k4/rps/rps_game';
 
         const data = {
-            choice: 'rock'
+            choice: c
         };
 
         const headers = {
