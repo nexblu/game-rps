@@ -21,7 +21,7 @@ async def rps_game(rps: RPS):
                         "status_code": 200,
                     }
                 },
-                status_code=404,
+                status_code=200,
             )
         elif (
             ((rps.choice).lower() == "rock" and bot_choice == "scissors")
@@ -37,7 +37,7 @@ async def rps_game(rps: RPS):
                         "status_code": 200,
                     }
                 },
-                status_code=404,
+                status_code=200,
             )
         else:
             return JSONResponse(
@@ -49,7 +49,7 @@ async def rps_game(rps: RPS):
                         "status_code": 200,
                     }
                 },
-                status_code=404,
+                status_code=200,
             )
     else:
         return JSONResponse(
