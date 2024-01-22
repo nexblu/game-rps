@@ -17,6 +17,7 @@ async def rps_image(rps: RPS):
             content={
                 "k4": {
                     "status": f"success",
+                    "url_image": choice[rps.choice],
                     "status_code": 200,
                 }
             },
