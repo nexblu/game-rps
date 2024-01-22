@@ -6,8 +6,9 @@ import '../static/css/main.css'
 const App = () => {
     return (
         <>
-            <section className="jumbotron text-light">
-                <Container>
+            <section className="jumbotron text-light bg-black">
+                <br /><br />
+                <Container className='border rounded bg-dark'>
                     <br /><br />
                     <div className="row text-center fw-bold title">
                         <div className="col">
@@ -16,6 +17,7 @@ const App = () => {
                     </div>
                     <br />
                     <GameRPS></GameRPS>
+                    <br /><br />
                 </Container>
             </section>
             <script src="https://cdn.jsdelivr.net/npm/react/umd/react.production.min.js" crossOrigin></script>

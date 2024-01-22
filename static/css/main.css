@@ -1,6 +1,5 @@
 body .jumbotron {
   min-height: 100vh;
-  background-color: black;
 }
 body .jumbotron .container .game .rock {
   background-color: white;
