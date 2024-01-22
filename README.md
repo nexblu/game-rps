@@ -1,4 +1,5 @@
 # Tugas Framework Python Kelompok 4
+This is a rock paper scissors game based on a website, this game was created based on group assignments on campus
 
 ## Framework
 1. FastAPI (As Backend)
