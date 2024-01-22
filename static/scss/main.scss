@@ -2,5 +2,39 @@ body {
     .jumbotron {
         min-height: 100vh;
         background-color: black;
+        .container {
+            .game {
+                .rock {
+                    background-color: white;
+                    padding-bottom: 10px;
+                    height: 13rem;
+                    width: 13rem;
+                    .image-rock {
+                        height: 6rem;
+                        width: 6rem;
+                    }
+                }
+                .paper {
+                    background-color: white;
+                    padding-bottom: 10px;
+                    height: 13rem;
+                    width: 13rem;
+                    .image-paper {
+                        height: 6rem;
+                        width: 6rem;
+                    }
+                }
+                .scissors {
+                    background-color: white;
+                    padding-bottom: 10px;
+                    height: 13rem;
+                    width: 13rem;
+                    .image-scissors {
+                        height: 6rem;
+                        width: 6rem;
+                    }
+                }
+            }
+        }
     }
 }

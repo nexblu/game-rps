@@ -1,4 +1,34 @@
 body .jumbotron {
   min-height: 100vh;
   background-color: black;
+}
+body .jumbotron .container .game .rock {
+  background-color: white;
+  padding-bottom: 10px;
+  height: 13rem;
+  width: 13rem;
+}
+body .jumbotron .container .game .rock .image-rock {
+  height: 6rem;
+  width: 6rem;
+}
+body .jumbotron .container .game .paper {
+  background-color: white;
+  padding-bottom: 10px;
+  height: 13rem;
+  width: 13rem;
+}
+body .jumbotron .container .game .paper .image-paper {
+  height: 6rem;
+  width: 6rem;
+}
+body .jumbotron .container .game .scissors {
+  background-color: white;
+  padding-bottom: 10px;
+  height: 13rem;
+  width: 13rem;
+}
+body .jumbotron .container .game .scissors .image-scissors {
+  height: 6rem;
+  width: 6rem;
 }/*# sourceMappingURL=main.css.map */
