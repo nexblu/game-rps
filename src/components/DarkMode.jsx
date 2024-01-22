@@ -4,7 +4,7 @@ const DarkMode = ( prop ) => {
     let { isChecked, handleChange } = prop;
     return (
         <>
-            <Form className='switch-dark-mode'>
+            <Form className={`switch-dark-mode ${isChecked}`}>
                 <Form.Check
                     type="switch"
                     id="dark-mode-switch"
