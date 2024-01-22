@@ -1,8 +1,9 @@
 import Particles from "react-particles-js";
+import ParticalConfig from "../../config/ParticleConfig";
 
 const ParticleBG = () => {
     return (
-        <Particles></Particles>
+        <Particles params={ParticalConfig}></Particles>
     )
 }
 
