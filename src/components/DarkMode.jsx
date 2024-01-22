@@ -1,6 +1,7 @@
 import { Form } from 'react-bootstrap';
 
-const DarkMode = ({ isChecked, handleChange }) => {
+const DarkMode = ( prop ) => {
+    let { isChecked, handleChange } = prop;
     return (
         <>
             <Form className='switch-dark-mode'>
