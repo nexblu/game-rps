@@ -21,7 +21,7 @@ const App = () => {
                     <br /><br />
                     <div className="row text-center fw-bold title">
                         <div className="col">
-                            <h3>RPS Game</h3>
+                            <h4 className='fw-bold'>RPS Game</h4>
                         </div>
                     </div>
                     <br />
@@ -29,7 +29,7 @@ const App = () => {
                     <br /><br />
                     <div className="row text-center">
                         <div className="col">
-                            <h3>Kelompok 4: </h3><br />
+                            <h4 className='fw-bold'>Kelompok 4: </h4><br />
                             <Table striped bordered hover size="sm">
                                 <thead>
                                     <tr>
