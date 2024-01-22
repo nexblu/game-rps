@@ -2,13 +2,22 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Table } from 'react-bootstrap';
 import GameRPS from './components/GameRPS';
 import '../static/css/main.css'
+import DarkMode from './components/DarkMode';
+import { useState } from 'react';
 
 const App = () => {
+    const [isDarkMode, setIsDarkMode] = useState(true);
+
+    const toggleDarkMode = () => {
+        setIsDarkMode(!isDarkMode);
+    };
+
     return (
         <>
-            <section className="jumbotron text-light bg-black">
+            <section className={`jumbotron text-light ${isDarkMode ? 'bg-black' : 'bg-light'}`}>
                 <br /><br />
-                <Container className='border rounded bg-dark'>
+                <DarkMode isChecked={isDarkMode} handleChange={toggleDarkMode} />
+                <Container className='rounded bg-dark shadow-lg'>
                     <br /><br />
                     <div className="row text-center fw-bold title">
                         <div className="col">

@@ -43,6 +43,7 @@ const GameRPS = () => {
                 console.error('Error:', error.response.data);
             });
     }
+
     return (
         <>
             {result}
