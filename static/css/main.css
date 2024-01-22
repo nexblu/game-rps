@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Recursive&display=swap");
+body {
+  font-family: "Recursive", sans-serif;
+}
 body .jumbotron {
   min-height: 100vh;
 }
