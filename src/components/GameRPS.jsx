@@ -29,8 +29,6 @@ const GameRPS = (prop) => {
                 const result_game = response.data['k4']['status']
                 const your_choice = response.data['k4']['your_choice']
                 const bot_choice = response.data['k4']['bot_choice']
-                console.log('Response:', response.data);
-                console.log(result)
                 choiceUpdate(
                     <>
                         <div className="row text-center fw-bold">
