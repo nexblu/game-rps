@@ -17,20 +17,20 @@ const App = () => {
             <section className={`jumbotron text-light ${isDarkMode ? 'bg-black' : 'bg-light'}`}>
                 <br /><br />
                 <DarkMode isChecked={isDarkMode} handleChange={toggleDarkMode} />
-                <Container className='rounded bg-dark shadow-lg'>
+                <Container className={`rounded ${isDarkMode ? 'bg-dark' : 'bg-light-container'} shadow-lg`}>
                     <br /><br />
                     <div className="row text-center fw-bold title">
                         <div className="col">
-                            <h4 className='fw-bold'>RPS Game</h4>
+                            <h4 className={`fw-bold ${isDarkMode ? 'text-light' : 'text-dark'}`}>RPS Game</h4>
                         </div>
                     </div>
                     <br />
-                    <GameRPS></GameRPS>
+                    <GameRPS isChecked={isDarkMode}></GameRPS>
                     <br /><br />
                     <div className="row text-center">
                         <div className="col">
-                            <h4 className='fw-bold'>Kelompok 4: </h4><br />
-                            <Table striped bordered hover size="sm">
+                            <h4 className={`fw-bold ${isDarkMode ? 'text-light' : 'text-dark'}`}>Kelompok 4: </h4><br />
+                            <Table striped bordered hover size="sm" className={`${isDarkMode ? 'table-primary' : 'table-dark'}`}>
                                 <thead>
                                     <tr>
                                         <th>#</th>

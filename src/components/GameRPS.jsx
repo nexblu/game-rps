@@ -6,7 +6,9 @@ import Scissors from '../../static/image/scissors.png';
 import { useState } from 'react'
 import axios from 'axios'
 
-const GameRPS = () => {
+const GameRPS = (prop) => {
+    let { isChecked } = prop;
+
     const [result, choiceUpdate] = useState('');
 
     const buttonClick = (c) => {
@@ -32,7 +34,7 @@ const GameRPS = () => {
                 choiceUpdate(
                     <>
                         <div className="row text-center fw-bold">
-                            <div className="col result text-lght">
+                            <div className={`col result`}>
                                 {`you ${result_game}, your choice : ${your_choice} and bot choice ${bot_choice}`}
                             </div>
                         </div>
@@ -46,26 +48,30 @@ const GameRPS = () => {
 
     return (
         <>
-            {result}
+            <div className="row">
+                <div className={`col ${isChecked ? 'text-light' : 'text-dark'}`}>
+                    {result}
+                </div>
+            </div>
             <br /><br />
             <div className="row text-center game justify-content-center">
-                <div className="col-md-4 rock mb-3 mt-3 border me-3 ms-3 rounded item-rps">
+                <div className={`col-md-4 rock mb-3 mt-3 border me-3 ms-3 rounded item-rps ${isChecked ? 'bg-light-container' : 'bg-dark'}`}>
                     <br />
                     <Image src={Rock} className='mb-3 image-rock'></Image>
                     <br /><br />
-                    <Button variant="primary" onClick={() => buttonClick("rock")}>Rock</Button>
+                    <Button variant="primary" className={`${isChecked ? '' : 'btn-light-theme'}`} onClick={() => buttonClick("rock")}>Rock</Button>
                 </div>
-                <div className="col-md-4 paper mb-3 mt-3 border me-3 ms-3 rounded item-rps">
+                <div className={`col-md-4 paper mb-3 mt-3 border me-3 ms-3 rounded item-rps ${isChecked ? 'bg-light-container' : 'bg-dark'}`}>
                     <br />
                     <Image src={Paper} className='mb-3 image-paper'></Image>
                     <br /><br />
-                    <Button variant="primary" onClick={() => buttonClick("paper")}>Paper</Button>
+                    <Button variant="primary" className={`${isChecked ? '' : 'btn-light-theme'}`} onClick={() => buttonClick("paper")}>Paper</Button>
                 </div>
-                <div className="col-md-4 scissors mb-3 mt-3 border me-3 ms-3 rounded item-rps">
+                <div className={`col-md-4 scissors mb-3 mt-3 border me-3 ms-3 rounded item-rps ${isChecked ? 'bg-light-container' : 'bg-dark'}`}>
                     <br />
                     <Image src={Scissors} className='mb-3 image-scissors'></Image>
                     <br /><br />
-                    <Button variant="primary" onClick={() => buttonClick("scissors")}>Scissors</Button>
+                    <Button variant="primary" className={`${isChecked ? '' : 'btn-light-theme'}`} onClick={() => buttonClick("scissors")}>Scissors</Button>
                 </div>
             </div>
         </>

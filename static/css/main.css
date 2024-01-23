@@ -5,6 +5,18 @@ body {
 body .jumbotron {
   min-height: 100vh;
 }
+body .jumbotron .container {
+  background-color: #FCFFFF;
+}
+body .jumbotron .container .game .item-rps button.btn-light-theme {
+  --bs-btn-bg: #08956E;
+  --bs-btn-border-color: #08956E;
+  --bs-btn-hover-bg: #1d8567;
+  --bs-btn-hover-border-color: #1d8567;
+  --bs-btn-active-color: #1d8567;
+  --bs-btn-active-bg: #1d8567;
+  --bs-btn-active-border-color: #1d8567;
+}
 body .jumbotron .container .game .item-rps button {
   height: 3rem;
   width: 6rem;
