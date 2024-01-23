@@ -22,6 +22,10 @@ body .jumbotron .container .row .col table.table-dark-v1 {
   --bs-table-bg: #242533;
   --bs-table-border-color: #242533;
 }
+body .jumbotron .container .row .col table.table-light-v1 {
+  --bs-table-bg: #FFFFFF;
+  --bs-table-border-color: #FFFFFF;
+}
 body .jumbotron .container .game .item-rps.bg-dark-v1 {
   background-color: #242533;
 }

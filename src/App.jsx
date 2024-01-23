@@ -30,7 +30,7 @@ const App = () => {
                     <div className="row text-center">
                         <div className="col">
                             <h4 className={`fw-bold ${isDarkMode ? 'text-light' : 'text-dark'}`}>Kelompok 4: </h4><br />
-                            <Table striped bordered hover size="sm" className={`${isDarkMode ? 'table-primary' : 'table-dark-v1'}`}>
+                            <Table striped bordered hover size="sm" className={`${isDarkMode ? 'table-light-v1' : 'table-dark-v1'}`}>
                                 <thead>
                                     <tr>
                                         <th className={`${isDarkMode ? '' : 'text-light'}`}>#</th>
