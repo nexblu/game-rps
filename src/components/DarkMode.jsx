@@ -1,18 +1,22 @@
-import { Form } from 'react-bootstrap';
+import { Image } from 'react-bootstrap';
+import LightTheme from '../../static/image/day.png'
+import DarkTheme from '../../static/image/night.png'
 
-const DarkMode = ( prop ) => {
+const DarkMode = (prop) => {
     let { isChecked, handleChange } = prop;
+
+    const ImageTheme = () => {
+        if (isChecked) {
+            return LightTheme
+        } else {
+            return DarkTheme
+        }
+    }
     return (
         <>
-            <Form className={`switch-dark-mode ${isChecked}`}>
-                <Form.Check
-                    type="switch"
-                    id="dark-mode-switch"
-                    className='text-center'
-                    onClick={handleChange}
-                />
-            </Form>
-            <br />
+            <div className="d-flex justify-content-end">
+                <Image src={ImageTheme()} onClick={handleChange} itemType='button' className='dark-switch rounded-circle me-2'></Image>
+            </div>
         </>
     );
 };

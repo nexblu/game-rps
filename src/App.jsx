@@ -15,10 +15,10 @@ const App = () => {
     return (
         <>
             <section className={`jumbotron text-light ${isDarkMode ? 'bg-dark-v1' : 'bg-light-v1'}`}>
-                <br /><br />
+                <br />
+                <Container className={`rounded ${isDarkMode ? 'bg-dark-v2' : 'bg-light-container'} shadow-lg pt-3`}>
                 <DarkMode isChecked={isDarkMode} handleChange={toggleDarkMode} />
-                <Container className={`rounded ${isDarkMode ? 'bg-dark-v2' : 'bg-light-container'} shadow-lg`}>
-                    <br /><br />
+                    <br />
                     <div className="row text-center fw-bold title">
                         <div className="col">
                             <h4 className={`fw-bold ${isDarkMode ? 'text-light' : 'text-dark'}`}>RPS Game</h4>

@@ -8,9 +8,15 @@ body {
     }
     .jumbotron.bg-light-v1 {
         background-color: #F9FAFB;
+        min-height: 100vh;
     }
     .jumbotron {
         min-height: 100vh;
+        img.dark-switch {
+            height: 2.5rem;
+            width: 2.5rem;
+            cursor: pointer;
+        }
         .container.bg-dark-v2 {
             background-color: #242533;
         }
