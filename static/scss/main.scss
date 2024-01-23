@@ -2,11 +2,32 @@
 
 body {
     font-family: 'Recursive', sans-serif;
+    .jumbotron.bg-dark-v1 {
+        background-color: #171823;
+        min-height: 100vh;
+    }
+    .jumbotron.bg-light-v1 {
+        background-color: #F9FAFB;
+    }
     .jumbotron {
         min-height: 100vh;
+        .container.bg-dark-v2 {
+            background-color: #242533;
+        }
         .container {
-            background-color: #FCFFFF;
+            background-color: #FFFFFF;
+            .row {
+                .col {
+                    table.table-dark-v1 {
+                        --bs-table-bg: #242533;
+                        --bs-table-border-color: #242533;
+                    }
+                }
+            }
             .game {
+                .item-rps.bg-dark-v1 {
+                    background-color: #242533;
+                }
                 .item-rps {
                     button.btn-light-theme {
                         --bs-btn-bg: #08956E;

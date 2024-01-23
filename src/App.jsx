@@ -14,10 +14,10 @@ const App = () => {
 
     return (
         <>
-            <section className={`jumbotron text-light ${isDarkMode ? 'bg-black' : 'bg-light'}`}>
+            <section className={`jumbotron text-light ${isDarkMode ? 'bg-dark-v1' : 'bg-light-v1'}`}>
                 <br /><br />
                 <DarkMode isChecked={isDarkMode} handleChange={toggleDarkMode} />
-                <Container className={`rounded ${isDarkMode ? 'bg-dark' : 'bg-light-container'} shadow-lg`}>
+                <Container className={`rounded ${isDarkMode ? 'bg-dark-v2' : 'bg-light-container'} shadow-lg`}>
                     <br /><br />
                     <div className="row text-center fw-bold title">
                         <div className="col">
@@ -30,34 +30,34 @@ const App = () => {
                     <div className="row text-center">
                         <div className="col">
                             <h4 className={`fw-bold ${isDarkMode ? 'text-light' : 'text-dark'}`}>Kelompok 4: </h4><br />
-                            <Table striped bordered hover size="sm" className={`${isDarkMode ? 'table-primary' : 'table-dark'}`}>
+                            <Table striped bordered hover size="sm" className={`${isDarkMode ? 'table-primary' : 'table-dark-v1'}`}>
                                 <thead>
                                     <tr>
-                                        <th>#</th>
-                                        <th>Name</th>
-                                        <th>NPM</th>
+                                        <th className={`${isDarkMode ? '' : 'text-light'}`}>#</th>
+                                        <th className={`${isDarkMode ? '' : 'text-light'}`}>Name</th>
+                                        <th className={`${isDarkMode ? '' : 'text-light'}`}>NPM</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>1</td>
-                                        <td>ANDANA FARRAS PRAMUDITA</td>
-                                        <td>50423159</td>
+                                        <td className={`${isDarkMode ? '' : 'text-light'}`}>1</td>
+                                        <td className={`${isDarkMode ? '' : 'text-light'}`}>ANDANA FARRAS PRAMUDITA</td>
+                                        <td className={`${isDarkMode ? '' : 'text-light'}`}>50423159</td>
                                     </tr>
                                     <tr>
-                                        <td>2</td>
-                                        <td>MUHAMMAD RAFI FADILLAH</td>
-                                        <td>50423976</td>
+                                        <td className={`${isDarkMode ? '' : 'text-light'}`}>2</td>
+                                        <td className={`${isDarkMode ? '' : 'text-light'}`}>MUHAMMAD RAFI FADILLAH</td>
+                                        <td className={`${isDarkMode ? '' : 'text-light'}`}>50423976</td>
                                     </tr>
                                     <tr>
-                                        <td>3</td>
-                                        <td>NI MADE MAS VIKA AMANDA</td>
-                                        <td>51423099</td>
+                                        <td className={`${isDarkMode ? '' : 'text-light'}`}>3</td>
+                                        <td className={`${isDarkMode ? '' : 'text-light'}`}>NI MADE MAS VIKA AMANDA</td>
+                                        <td className={`${isDarkMode ? '' : 'text-light'}`}>51423099</td>
                                     </tr>
                                     <tr>
-                                        <td>4</td>
-                                        <td>SAMUEL MARTOGI SIHITE</td>
-                                        <td>51423357</td>
+                                        <td className={`${isDarkMode ? '' : 'text-light'}`}>4</td>
+                                        <td className={`${isDarkMode ? '' : 'text-light'}`}>SAMUEL MARTOGI SIHITE</td>
+                                        <td className={`${isDarkMode ? '' : 'text-light'}`}>51423357</td>
                                     </tr>
                                 </tbody>
                             </Table>

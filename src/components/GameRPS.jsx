@@ -55,19 +55,19 @@ const GameRPS = (prop) => {
             </div>
             <br /><br />
             <div className="row text-center game justify-content-center">
-                <div className={`col-md-4 rock mb-3 mt-3 border me-3 ms-3 rounded item-rps ${isChecked ? 'bg-light-container' : 'bg-dark'}`}>
+                <div className={`col-md-4 rock mb-3 mt-3 border me-3 ms-3 rounded item-rps ${isChecked ? 'bg-light-container' : 'bg-dark-v1'}`}>
                     <br />
                     <Image src={Rock} className='mb-3 image-rock'></Image>
                     <br /><br />
                     <Button variant="primary" className={`${isChecked ? '' : 'btn-light-theme'}`} onClick={() => buttonClick("rock")}>Rock</Button>
                 </div>
-                <div className={`col-md-4 paper mb-3 mt-3 border me-3 ms-3 rounded item-rps ${isChecked ? 'bg-light-container' : 'bg-dark'}`}>
+                <div className={`col-md-4 paper mb-3 mt-3 border me-3 ms-3 rounded item-rps ${isChecked ? 'bg-light-container' : 'bg-dark-v1'}`}>
                     <br />
                     <Image src={Paper} className='mb-3 image-paper'></Image>
                     <br /><br />
                     <Button variant="primary" className={`${isChecked ? '' : 'btn-light-theme'}`} onClick={() => buttonClick("paper")}>Paper</Button>
                 </div>
-                <div className={`col-md-4 scissors mb-3 mt-3 border me-3 ms-3 rounded item-rps ${isChecked ? 'bg-light-container' : 'bg-dark'}`}>
+                <div className={`col-md-4 scissors mb-3 mt-3 border me-3 ms-3 rounded item-rps ${isChecked ? 'bg-light-container' : 'bg-dark-v1'}`}>
                     <br />
                     <Image src={Scissors} className='mb-3 image-scissors'></Image>
                     <br /><br />
