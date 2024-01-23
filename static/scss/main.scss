@@ -16,6 +16,12 @@ body {
         }
         .container {
             background-color: #FFFFFF;
+            hr.garis-light {
+                border: 1px solid #242533;
+            }
+            hr.garis-dark {
+                border: 1px solid #F9FAFB;
+            }
             .row {
                 .col {
                     table.table-dark-v1 {
@@ -50,31 +56,31 @@ body {
                 .rock {
                     background-color: white;
                     padding-bottom: 10px;
-                    height: 15rem;
-                    width: 15rem;
+                    height: 10rem;
+                    width: 10rem;
                     .image-rock {
-                        height: 7rem;
-                        width: 7rem;
+                        height: 4rem;
+                        width: 4rem;
                     }
                 }
                 .paper {
                     background-color: white;
                     padding-bottom: 10px;
-                    height: 15rem;
-                    width: 15rem;
+                    height: 10rem;
+                    width: 10rem;
                     .image-paper {
-                        height: 7rem;
-                        width: 7rem;
+                        height: 4rem;
+                        width: 4rem;
                     }
                 }
                 .scissors {
                     background-color: white;
                     padding-bottom: 10px;
-                    height: 15rem;
-                    width: 15rem;
+                    height: 10rem;
+                    width: 10rem;
                     .image-scissors {
-                        height: 7rem;
-                        width: 7rem;
+                        height: 4rem;
+                        width: 4rem;
                     }
                 }
             }

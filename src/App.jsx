@@ -26,7 +26,9 @@ const App = () => {
                     </div>
                     <br />
                     <GameRPS isChecked={isDarkMode}></GameRPS>
-                    <br /><br />
+                    <br />
+                    <hr className={`${isDarkMode ? 'garis-dark' : 'garis-light'}`}/>
+                    <br />
                     <div className="row text-center">
                         <div className="col">
                             <h4 className={`fw-bold ${isDarkMode ? 'text-light' : 'text-dark'}`}>Kelompok 4: </h4><br />
