@@ -256,5 +256,6 @@ sketch
 .ionide
 
 # End of https://www.toptal.com/developers/gitignore/api/python,pythonvanilla,visualstudiocode,linux,react,sass
-Dockerfile
+Dockerfile.be
+Dockerfile.fe
 .dockerignore

@@ -5,33 +5,37 @@ body {
 body .jumbotron {
   min-height: 100vh;
 }
+body .jumbotron .container .game .item-rps button {
+  height: 3rem;
+  width: 6rem;
+}
 body .jumbotron .container .game .rock {
   background-color: white;
   padding-bottom: 10px;
-  height: 13rem;
-  width: 13rem;
+  height: 15rem;
+  width: 15rem;
 }
 body .jumbotron .container .game .rock .image-rock {
-  height: 6rem;
-  width: 6rem;
+  height: 7rem;
+  width: 7rem;
 }
 body .jumbotron .container .game .paper {
   background-color: white;
   padding-bottom: 10px;
-  height: 13rem;
-  width: 13rem;
+  height: 15rem;
+  width: 15rem;
 }
 body .jumbotron .container .game .paper .image-paper {
-  height: 6rem;
-  width: 6rem;
+  height: 7rem;
+  width: 7rem;
 }
 body .jumbotron .container .game .scissors {
   background-color: white;
   padding-bottom: 10px;
-  height: 13rem;
-  width: 13rem;
+  height: 15rem;
+  width: 15rem;
 }
 body .jumbotron .container .game .scissors .image-scissors {
-  height: 6rem;
-  width: 6rem;
+  height: 7rem;
+  width: 7rem;
 }/*# sourceMappingURL=main.css.map */

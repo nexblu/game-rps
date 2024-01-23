@@ -6,34 +6,40 @@ body {
         min-height: 100vh;
         .container {
             .game {
+                .item-rps {
+                    button {
+                        height: 3rem;
+                        width: 6rem;
+                    }
+                }
                 .rock {
                     background-color: white;
                     padding-bottom: 10px;
-                    height: 13rem;
-                    width: 13rem;
+                    height: 15rem;
+                    width: 15rem;
                     .image-rock {
-                        height: 6rem;
-                        width: 6rem;
+                        height: 7rem;
+                        width: 7rem;
                     }
                 }
                 .paper {
                     background-color: white;
                     padding-bottom: 10px;
-                    height: 13rem;
-                    width: 13rem;
+                    height: 15rem;
+                    width: 15rem;
                     .image-paper {
-                        height: 6rem;
-                        width: 6rem;
+                        height: 7rem;
+                        width: 7rem;
                     }
                 }
                 .scissors {
                     background-color: white;
                     padding-bottom: 10px;
-                    height: 13rem;
-                    width: 13rem;
+                    height: 15rem;
+                    width: 15rem;
                     .image-scissors {
-                        height: 6rem;
-                        width: 6rem;
+                        height: 7rem;
+                        width: 7rem;
                     }
                 }
             }
