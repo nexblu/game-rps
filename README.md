@@ -25,10 +25,10 @@ docker pull nexblu/backend-game-rps:24.01
 ```
 5. Lalu Jalankan Untuk Bagian BackEnd Silahkan Ketik 
 ```bash
-sudo docker run -d -p 8000:8000 nexblu/backend-game-rps:24.01
+docker run -d -p 8000:8000 nexblu/backend-game-rps:24.01
 ```
 6. Lalu Jalankan Untuk Bagian FrontEnd Silahkan Ketik 
 ```bash
-sudo docker run -d -p 3000:3000 nexblu/frontend-game-rps:24.01
+docker run -d -p 3000:3000 nexblu/frontend-game-rps:24.01
 ```
 7. Lalu Buka localhost:8000 dan localhost:3000
